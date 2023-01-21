@@ -17,25 +17,36 @@ mongoose.connect("mongodb://localhost/copybin",{
     
 })
 
-//   if (mongoose.connection.readyState === 1) {
-//     console.log("Mongoose is connected to the database");
-//   } else {
-//     console.log("Mongoose is not connected to the database");
-//   }
+
   
  
 app.get("/", (req, res) =>{
 
     const code = `Welcome to CopyBin!
 
+# Project
+
 This project is clone of the known app HasteBin.
-    
+
+
+## Basic Usage
+
 Use the commands in the top right conrner
 to create a new file to share with others.
 
 Type what you want me to see, click "Save", and then copy the URL.
-Send that URL to someone and they'll see what you see.`
-    res.render("view-display.ejs", { code, language: 'plaintext' })
+Send that URL to someone and they'll see what you see.
+
+## AWS
+
+I have chosen to host our CopyBin app on Amazon Web Services 
+to take advantage of its robust and secure infrastructure,
+ensuring our users have the best experience possible.
+
+For more information about the cloud infrastructure
+behind the app please visit github.`
+
+    res.render("view-display.ejs", { code, language: 'markdown' })
 })
 
 app.get ("/new", (req, res) =>{
