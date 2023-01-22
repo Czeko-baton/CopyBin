@@ -21,7 +21,6 @@ mongoose.connect("mongodb://localhost/copybin",{
   
  
 app.get("/", (req, res) =>{
-
     const code = `Welcome to CopyBin!
 
 # Project
@@ -46,7 +45,7 @@ ensuring our users have the best experience possible.
 For more information about the cloud infrastructure
 behind the app please visit github.`
 
-    res.render("view-display.ejs", { code, language: 'markdown' })
+    res.render("view-display.ejs", { code, language: 'markdown'})
 })
 
 app.get ("/new", (req, res) =>{
@@ -60,8 +59,7 @@ app.post('/save', async (req,res) =>{
         res.redirect(`/${document.id}`)
     } catch (e) {
         res.render("new", { value })
-    }
-    console.log(value);
+    };
 })
 
 

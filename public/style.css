@@ -104,3 +104,22 @@ textarea{
     border: 1px solid #002b36;
     color:#002b36;
 }
+
+.logos-wrapper {
+    padding-bottom: 2px;
+    padding-top: 4px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .15);
+
+}
+
+.bottom-logos{
+    height: 50px;
+    padding: 2px;
+}
+.bottom-logos-db{
+    padding-bottom: 2px;
+    height: 50px;
+}
