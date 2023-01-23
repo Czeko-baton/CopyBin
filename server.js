@@ -33,17 +33,24 @@ This project is clone of the known app HasteBin.
 Use the commands in the top right conrner
 to create a new file to share with others.
 
-Type what you want me to see, click "Save", and then copy the URL.
+Type what you want to show, click "Save", and then copy the URL.
 Send that URL to someone and they'll see what you see.
+
+CopyBin features syntax highlighting when file is saved.
 
 ## AWS
 
 I have chosen to host our CopyBin app on Amazon Web Services 
-to take advantage of its robust and secure infrastructure,
-ensuring our users have the best experience possible.
+to take advantage of its robust and secure infrastructure.
 
-For more information about the cloud infrastructure
-behind the app please visit github.`
+## Tools
+
+In bottom left conrner you can find tools which were used
+to create this application.
+
+## Have a great day!
+
+Hope you like the project, see you around!`
 
     res.render("view-display.ejs", { code, language: 'markdown'})
 })

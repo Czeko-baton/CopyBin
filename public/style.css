@@ -9,9 +9,7 @@ body {
     padding: 1rem .5rem;
     font-size: .9rem;
 }
-.blue-hashtag{
-    color: blue;
-}
+
 pre {
     margin: 0;
 }
@@ -44,7 +42,7 @@ textarea{
     position: fixed;
     top: 0;
     right: 0;
-    background-image: linear-gradient(black 20%,#008182 80%);
+    background-color: rgba(255, 255, 255, .15);
     padding: 1rem;
     transition: opacity 200ms ease-in-out;
     border-bottom-left-radius: .25rem;
@@ -59,14 +57,13 @@ textarea{
     } 
 }
 
-
-
 .logo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #95B8C3;
+    color: rgb(40, 100, 197);
     width: 100%;
     display: inline-block;
     transition: color 200ms ease-in-out;
@@ -74,6 +71,20 @@ textarea{
 
 .logo:hover{
     color: white;
+}
+
+.logo-icon{
+    position: fixed;
+    height: 2rem;
+    bottom: 0;
+    right: 0;
+    padding: .5rem;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+
+}
+.logo-icon:hover{
+transform: scale(1.1);
 }
 
 .buttons{
@@ -106,20 +117,33 @@ textarea{
 }
 
 .logos-wrapper {
-    padding-bottom: 2px;
-    padding-top: 4px;
+    padding: 4px;
     position: fixed;
     bottom: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, .15);
-
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-right-radius: .25rem;
 }
 
 .bottom-logos{
     height: 50px;
     padding: 2px;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
 }
+
 .bottom-logos-db{
     padding-bottom: 2px;
     height: 50px;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+
+.bottom-logos:hover{
+    transform: scale(1.1)
+
+}
+.bottom-logos-db:hover{
+    transform: scale(1.1)
+
 }

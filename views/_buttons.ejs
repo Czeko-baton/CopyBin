@@ -4,11 +4,10 @@
         <a href="/new" class="btn">New</a>
         <% if (locals.canSave) { %>
             <button class="btn" type="submit">Save</button>
-        <% } %>
-        <% if (locals.id != null) { %>
-            <a href="/<%= locals.id %>/duplicate" class="btn">Duplicate</a>
-        <% } %>
-           
-    </div>
-    
+            <% } %>
+            <% if (locals.id != null) { %>
+                <a href="/<%= locals.id %>/duplicate" class="btn">Duplicate</a>
+                <% } %>
+            </div>
+            <a href="/" class=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/LogoCPazul.svg" class="logo-icon" alt="CopyBin Logo Icon"></a>   
 </div>
