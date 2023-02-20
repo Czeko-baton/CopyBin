@@ -1,7 +1,7 @@
 # CopyBin
-Project of making Clone of HasteBin app from beginning and putting on AWS.
+Project of making Clone of HasteBin app with retro visual style, before was purchased by Toptal.
 
-CopyBin is a pastebin-style web application that allows users to share text snippets online. The main purpose of HasteBin is to provide a quick and easy way to share code, configuration files, or other text-based content that can be easily accessed from anywhere in the world.
+CopyBin is a pastebin-style web application that allows users to share text snippets online. The main purpose of CopyBin is to provide a quick and easy way to share code, configuration files, or other text-based content that can be easily accessed from anywhere in the world.
 The duplicate function provides the ability to open, edit, save, and re-share the code, allowing for convenient and efficient collaboration.
 
 
